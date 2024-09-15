@@ -1,4 +1,4 @@
-## eCommerce Web App with Dot Net-8 and Angular-18.
+## ECommerce Web App with Dot Net-8 and Angular-18.
 
 The architecture of this project will be similar to the below image.
 
