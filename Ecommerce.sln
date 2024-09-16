@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Bask
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Core", "Services\Basket\Basket.Core\Basket.Core.csproj", "{3594A90D-85F5-4A11-8EB8-F2C8307875DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Application", "Services\Basket\Basket.Application\Basket.Application.csproj", "{781D7900-5E4D-4031-B2DB-A4218F0ADC1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{3594A90D-85F5-4A11-8EB8-F2C8307875DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3594A90D-85F5-4A11-8EB8-F2C8307875DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3594A90D-85F5-4A11-8EB8-F2C8307875DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781D7900-5E4D-4031-B2DB-A4218F0ADC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781D7900-5E4D-4031-B2DB-A4218F0ADC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781D7900-5E4D-4031-B2DB-A4218F0ADC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781D7900-5E4D-4031-B2DB-A4218F0ADC1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{53DF30B6-8F70-4BFF-B3CC-66100980B9D2} = {9777F870-6A1A-4CF9-AE37-0C3D410246E7}
 		{1D66AF8D-DC95-43FB-8710-6186E60399A1} = {53DF30B6-8F70-4BFF-B3CC-66100980B9D2}
 		{3594A90D-85F5-4A11-8EB8-F2C8307875DA} = {53DF30B6-8F70-4BFF-B3CC-66100980B9D2}
+		{781D7900-5E4D-4031-B2DB-A4218F0ADC1F} = {53DF30B6-8F70-4BFF-B3CC-66100980B9D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE6FE3EA-6773-4FB6-BE3A-6F474EBEFFA9}
