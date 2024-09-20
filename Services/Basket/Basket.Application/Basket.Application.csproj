@@ -16,4 +16,10 @@
 	  <ProjectReference Include="..\Basket.Core\Basket.Core.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<Protobuf Include="..\..\Discount\Discount.Application\Protos\discount.proto" GrpcServices="Client">
+			<Link>Protos\discount.proto</Link>
+		</Protobuf>
+	</ItemGroup>
+
 </Project>
