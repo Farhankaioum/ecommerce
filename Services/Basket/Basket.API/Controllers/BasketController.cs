@@ -10,10 +10,8 @@ namespace Basket.API.Controllers
     public class BasketController : ApiController
     {
         public readonly IMediator _mediator;
-        public BasketController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+
+        public BasketController(IMediator mediator) => _mediator = mediator;
 
         [HttpGet]
         [Route("[action]/{userName}", Name = "GetBasketByUserName")]
