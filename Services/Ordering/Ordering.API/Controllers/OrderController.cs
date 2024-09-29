@@ -12,7 +12,8 @@ namespace Ordering.API.Controllers
         private readonly IMediator _mediator;
         private readonly ILogger<OrderController> _logger;
 
-        public OrderController(IMediator mediator, ILogger<OrderController> logger)
+        public OrderController(IMediator mediator,
+                ILogger<OrderController> logger)
         {
             _mediator = mediator;
             _logger = logger;
@@ -26,6 +27,7 @@ namespace Ordering.API.Controllers
             var orders = await _mediator.Send(query);
             return Ok(orders);
         }
+
         //Just for testing 
         [HttpPost(Name = "CheckoutOrder")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
@@ -34,6 +36,7 @@ namespace Ordering.API.Controllers
             var result = await _mediator.Send(command);
             return Ok(result);
         }
+
         [HttpPut(Name = "UpdateOrder")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -42,6 +45,7 @@ namespace Ordering.API.Controllers
             var result = await _mediator.Send(command);
             return NoContent();
         }
+
         [HttpDelete("{id}", Name = "DeleteOrder")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
