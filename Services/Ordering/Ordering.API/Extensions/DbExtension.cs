@@ -25,7 +25,8 @@ namespace Ordering.API.Extensions
                             sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                             onRetry: (exception, span, count) =>
                             {
-                                logger.LogError($"Retrying because of {exception} {span}");
+                                string message = $"Retrying because of {exception} {span}";
+                                logger.LogError(message);
                             });
                     retry.Execute(() => CallSeeder(seeder, context, services));
                     logger.LogInformation($"Migration Completed: {typeof(TContext).Name}");
@@ -40,7 +41,7 @@ namespace Ordering.API.Extensions
 
         private static void CallSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext? context, IServiceProvider services) where TContext : DbContext
         {
-            context.Database.Migrate();
+            context?.Database.Migrate();
             seeder(context, services);
         }
     }
