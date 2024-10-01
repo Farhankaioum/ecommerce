@@ -19,6 +19,14 @@ namespace Common.Logging
                 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Warning)
                 .WriteTo.Console();
+
+                if (context.HostingEnvironment.IsDevelopment())
+                {
+                    loggerConfiguration.MinimumLevel.Override("Catalog", LogEventLevel.Debug);
+                    loggerConfiguration.MinimumLevel.Override("Basket", LogEventLevel.Debug);
+                    loggerConfiguration.MinimumLevel.Override("Discount", LogEventLevel.Debug);
+                    loggerConfiguration.MinimumLevel.Override("Ordering", LogEventLevel.Debug);
+                }
             };
     }
 }
