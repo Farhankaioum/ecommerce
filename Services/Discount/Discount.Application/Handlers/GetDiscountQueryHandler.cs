@@ -31,7 +31,7 @@ namespace Discount.Application.Handlers
                 Description = coupon.Description,
                 ProductName = coupon.ProductName
             };
-            _logger.LogInformation($"Copon for the {request.ProductName} is fetched");
+            _logger.LogInformation($"Coupon for the {request.ProductName} is fetched");
             return couponModel;
         }
     }
