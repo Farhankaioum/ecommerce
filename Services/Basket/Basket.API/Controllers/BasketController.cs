@@ -5,7 +5,6 @@ using Basket.Application.Responses;
 using Basket.Core.Entities;
 using EventBus.Message.Events;
 using MassTransit;
-using MassTransit.Transports;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
